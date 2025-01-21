@@ -9,6 +9,7 @@ dnaseq="ATGGCCGCT"
 def hello(dna,codons):
     protein=""
     for x in range(0,len(dna),3):
+        print(x)
         code=dna[x:x+3]
         protein +=codons[code]
     return protein
